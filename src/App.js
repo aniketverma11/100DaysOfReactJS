@@ -1,6 +1,6 @@
 import './App.css';
 
-import React, { Component } from 'react';
+import React, { Component, createElement } from 'react';
 import Greet from "./components/Greet";
 import Welcome from './components/Welcome';
 import Hello from './components/hello';
@@ -16,16 +16,42 @@ class App extends Component {
    * @returns {JSX.Element} The rendered React element.
    */
   render() {
-    return (
-      <div className="App">
-        {/* Render the Greet component */}
-        <Greet />
-        {/* Render the Welcome component */}
-        <Welcome />
-        {/* Render the Hello component */}
-        <Hello />
-      </div>
+
+    return React.createElement(
+      'div',
+      {className:"App"},
+      React.createElement(
+        Greet,
+        { name: "Ram", heroName: "Super Man" },
+        "Hello this is SuperMan"
+      ),
+      React.createElement(
+        Greet,
+        {name:"Shyam", heroName:"Batman"},
+        React.createElement("button", null, "Action")
+      ),
+      React.createElement(
+        Greet,
+        {name:"Antony", heroName:"Shaktiman"},
+        React.createElement("button", null, "Action")
+      ),
     )
+    // return (
+    //   <div className="App">
+    //     {/* Render the Greet component */}
+    //     <Greet name="Ram" heroName="Super Man">
+    //       <p>Hello this is SuperMan</p>
+    //     </Greet>
+    //     <Greet name="Shyam" heroName="Batman">
+    //       <button>Action</button>
+    //     </Greet>
+    //     <Greet name="Antony" heroName="Shaktiman"/>
+    //     {/* Render the Welcome component */}
+    //     <Welcome />
+    //     {/* Render the Hello component */}
+    //     <Hello />
+    //   </div>
+    // )
   }
 }
 
