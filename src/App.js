@@ -36,22 +36,6 @@ class App extends Component {
         React.createElement("button", null, "Action")
       ),
     )
-    // return (
-    //   <div className="App">
-    //     {/* Render the Greet component */}
-    //     <Greet name="Ram" heroName="Super Man">
-    //       <p>Hello this is SuperMan</p>
-    //     </Greet>
-    //     <Greet name="Shyam" heroName="Batman">
-    //       <button>Action</button>
-    //     </Greet>
-    //     <Greet name="Antony" heroName="Shaktiman"/>
-    //     {/* Render the Welcome component */}
-    //     <Welcome />
-    //     {/* Render the Hello component */}
-    //     <Hello />
-    //   </div>
-    // )
   }
 }
 
