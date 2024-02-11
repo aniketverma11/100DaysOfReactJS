@@ -35,6 +35,14 @@ class App extends Component {
         {name:"Antony", heroName:"Shaktiman"},
         React.createElement("button", null, "Action")
       ),
+      React.createElement(
+        Welcome,
+        null
+      ),
+      React.createElement(
+        Hello,
+        null
+      )
     )
   }
 }
