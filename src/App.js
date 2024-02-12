@@ -4,6 +4,7 @@ import React, { Component, createElement } from 'react';
 import Greet from "./components/Greet";
 import Welcome from './components/Welcome';
 import Hello from './components/hello';
+import Message from './components/Message';
 
 /**
  * Represents the main application component.
@@ -36,12 +37,13 @@ class App extends Component {
         React.createElement("button", null, "Action")
       ),
       React.createElement(
-        Welcome,
-        null
+        Welcome
       ),
       React.createElement(
-        Hello,
-        null
+        Hello
+      ),
+      React.createElement(
+        Message,
       )
     )
   }
