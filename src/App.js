@@ -5,6 +5,7 @@ import Greet from "./components/Greet";
 import Welcome from './components/Welcome';
 import Hello from './components/hello';
 import Message from './components/Message';
+import Count from './components/Counter';
 
 /**
  * Represents the main application component.
@@ -44,6 +45,9 @@ class App extends Component {
       ),
       React.createElement(
         Message,
+      ),
+      React.createElement(
+        Count,
       )
     )
   }

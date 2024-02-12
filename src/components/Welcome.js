@@ -12,7 +12,14 @@ class Welcome extends Component {
      */
     render() {
         // Return an h1 element with the text "Class Component"
-        return <h1>Class Component</h1>;
+        return(
+            React.createElement(
+                'h1',
+                null,
+                "class Component"
+            )
+        )
+        
     }
 }
 
