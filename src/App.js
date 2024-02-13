@@ -7,6 +7,7 @@ import Hello from './components/hello';
 import Message from './components/Message';
 import Count from './components/Counter';
 import Work from './components/Work';
+import FunctionClick from './components/fuctionClick';
 
 /**
  * Represents the main application component.
@@ -52,6 +53,9 @@ class App extends Component {
       ),
       React.createElement(
         Work,
+      ),
+      React.createElement(
+        FunctionClick,
       )
     )
   }
