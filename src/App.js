@@ -8,6 +8,8 @@ import Message from './components/Message';
 import Count from './components/Counter';
 import Work from './components/Work';
 import FunctionClick from './components/fuctionClick';
+import NameList from './components/NameList';
+
 
 /**
  * Represents the main application component.
@@ -24,38 +26,41 @@ class App extends Component {
     return React.createElement(
       'div',
       {className:"App"},
+      // React.createElement(
+      //   Greet,
+      //   { name: "Ram", heroName: "Super Man" },
+      //   "Hello this is SuperMan"
+      // ),
+      // React.createElement(
+      //   Greet,
+      //   {name:"Shyam", heroName:"Batman"},
+      //   React.createElement("button", null, "Action")
+      // ),
+      // React.createElement(
+      //   Greet,
+      //   {name:"Antony", heroName:"Shaktiman"},
+      //   React.createElement("button", null, "Action")
+      // ),
+      // React.createElement(
+      //   Welcome
+      // ),
+      // React.createElement(
+      //   Hello
+      // ),
+      // React.createElement(
+      //   Message,
+      // ),
+      // React.createElement(
+      //   Count,
+      // ),
+      // React.createElement(
+      //   Work,
+      // ),
+      // React.createElement(
+      //   FunctionClick,
+      // )
       React.createElement(
-        Greet,
-        { name: "Ram", heroName: "Super Man" },
-        "Hello this is SuperMan"
-      ),
-      React.createElement(
-        Greet,
-        {name:"Shyam", heroName:"Batman"},
-        React.createElement("button", null, "Action")
-      ),
-      React.createElement(
-        Greet,
-        {name:"Antony", heroName:"Shaktiman"},
-        React.createElement("button", null, "Action")
-      ),
-      React.createElement(
-        Welcome
-      ),
-      React.createElement(
-        Hello
-      ),
-      React.createElement(
-        Message,
-      ),
-      React.createElement(
-        Count,
-      ),
-      React.createElement(
-        Work,
-      ),
-      React.createElement(
-        FunctionClick,
+        NameList,
       )
     )
   }
