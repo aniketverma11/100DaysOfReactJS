@@ -3,6 +3,7 @@ import Person from "./Person";
 
 
 function NameList() {
+    const names = ['Bruce', "Clark", "Diana", "Bruce"]
     const persons = [
         {
             id: 1,
@@ -29,8 +30,9 @@ function NameList() {
             skill: "React and web development"
         }
     ];
-    const personList = persons.map(name =>  (<Person key ="unique" name={name}/>))
-    return <div>{personList}</div>
+    // const personList = persons.map(name =>  (<Person key ="unique" name={name}/>))
+    const nameList = names.map((name, index) => <h2 key={index}>{index} {name}</h2>)
+    return <div>{nameList}</div>
 }
 
 
