@@ -28,6 +28,11 @@ class Count extends Component{
         this.increment()
         this.increment()
         this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
+        this.increment()
     }
 
     render(){
